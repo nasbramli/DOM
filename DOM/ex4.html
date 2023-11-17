@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <section id="container">
+        <ul>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ol>
+    </section>
+    <div class="footer">
+    </div>
+    <script>
+        //Select the section with a container id without using querySelector.
+        var section = document.getElementsByTagName('section')[0]
+        console.log[0]
+        //Select the section with a container id using querySelector.
+        const sectionContainer = document.querySelector('container')
+        //Select all the items list with a class of "second".
+        const second = document.getElementsByClassName('second')
+        //Select a list item with a class of third, but only the list item inside of the ol tag.
+        const oltag = document.getElementsByTagName(ol)
+        const third = oltag.querySelector('.third');
+        console.log(third)
+        //ive the text "Hello!" to the section with a container id.
+        const sectionid = document.getElementById('container').textContent= 'Hello'
+        //Add the main class to the div with a footer class.
+        const footerdiv =  document.getElementsByClassName('footer')[0];
+        footerdiv.classList.add('main')
+        //Remove the main class on the div with a footer class
+        footerdiv.classList.remove('main')
+        //Create a new li element.
+        const olTagWithNewElement = document.createElement('li')
+        olTagWithNewElement.textContent='four'
+        document.getElementsByTagName('ul')[0].appendChild(olTagWithNewElement)
+
+    </script>
+</body>
+</html>

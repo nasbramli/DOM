@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>JS DOM paragraph style</title>
+  </head> 
+  
+  <body>
+    <p id="text">JavaScript Exercises #3</p> 
+    <div>
+      <a href="https://www.google.com/?client=safari">Google</a>
+      <a href="https://sg.yahoo.com/?p=us">Yahoo</a>
+      <a href="https://www.msn.com/en-sg">MSN</a>
+      <button id="linkinfo" onclick="link_info()">Link info</button>
+    </div>
+    <script>
+      function link_info(){
+        let number = document.getElementsByTagName('a').length
+        let firstLink = document.getElementsByTagName('a')[0]
+        let lastLink = document.getElementsByTagName('a')[number-1]
+
+        console.log(number)
+        console.log(firstLink)
+        console.log(lastLink)
+        
+      }
+    </script>
+  </body>
+</html>
